@@ -1,0 +1,2509 @@
+{
+  "nodes": [
+    {
+      "id": "amylin",
+      "label": "Amylin (IAPP)",
+      "type": "Molecule",
+      "description": "Endogenous 37-amino-acid peptide hormone co-secreted with insulin from pancreatic beta cells. Human amylin readily aggregates into amyloid fibrils."
+    },
+    {
+      "id": "insulin",
+      "label": "Insulin",
+      "type": "Molecule",
+      "description": "Pancreatic hormone co-secreted with amylin. The insulin:amylin molar ratio is conflicting/unverified (reports range ~100:1 to ~20:1, assay- and species-dependent)."
+    },
+    {
+      "id": "glucagon",
+      "label": "Glucagon",
+      "type": "Molecule",
+      "description": "Pancreatic alpha-cell hormone; postprandial glucagon is suppressed by amylin signaling."
+    },
+    {
+      "id": "calcitonin",
+      "label": "Calcitonin",
+      "type": "Molecule",
+      "description": "Thyroid C-cell hormone; cognate ligand of the calcitonin receptor (CTR); inhibits osteoclast-mediated bone resorption."
+    },
+    {
+      "id": "cgrp",
+      "label": "CGRP (alpha-CGRP)",
+      "type": "Molecule",
+      "description": "Calcitonin gene-related peptide; high-affinity ligand of the CGRP receptor (CLR + RAMP1) and cross-reacts with AMY1."
+    },
+    {
+      "id": "salmon_ct",
+      "label": "Salmon calcitonin (sCT)",
+      "type": "Molecule",
+      "description": "Potent non-selective amylin/calcitonin receptor agonist used as a research tool; activates AMY receptors and CTR."
+    },
+    {
+      "id": "albumin",
+      "label": "Serum albumin",
+      "type": "Molecule",
+      "description": "Plasma protein; fatty-acid-acylated amylin analogs bind albumin reversibly, forming a circulating reservoir that slows clearance."
+    },
+    {
+      "id": "amyloid_oligomer",
+      "label": "Amylin oligomers",
+      "type": "Molecule",
+      "description": "Misfolded amylin oligomers, considered more toxic than fibrils; drive ER stress, mitochondrial dysfunction, and beta-cell apoptosis."
+    },
+    {
+      "id": "ctr",
+      "label": "Calcitonin receptor (CTR / CALCR)",
+      "type": "Receptor",
+      "description": "Class B / secretin-family GPCR; alone it is the functional calcitonin receptor; RAMP association creates AMY1-3."
+    },
+    {
+      "id": "amy1",
+      "label": "AMY1 receptor (CTR + RAMP1)",
+      "type": "Receptor",
+      "description": "Amylin receptor subtype; shares RAMP1 with the CGRP receptor, hence CGRP cross-reactivity."
+    },
+    {
+      "id": "amy2",
+      "label": "AMY2 receptor (CTR + RAMP2)",
+      "type": "Receptor",
+      "description": "Amylin receptor subtype; reported as more restricted to GI / endocrine tissues (human protein-level map unverified)."
+    },
+    {
+      "id": "amy3",
+      "label": "AMY3 receptor (CTR + RAMP3)",
+      "type": "Receptor",
+      "description": "Amylin receptor subtype; proposed Abeta receptor in hippocampus (Alzheimer's hypothesis, not a metabolic pathway)."
+    },
+    {
+      "id": "cgrp_receptor",
+      "label": "CGRP receptor (CLR + RAMP1)",
+      "type": "Receptor",
+      "description": "Classical CGRP receptor; mediates CGRP vasodilation; migraine CGRP antagonists may also antagonize AMY1."
+    },
+    {
+      "id": "ramp1",
+      "label": "RAMP1",
+      "type": "Receptor",
+      "description": "Receptor activity-modifying protein 1; accessory subunit converting CTR into AMY1 and CLR into the CGRP receptor."
+    },
+    {
+      "id": "ramp2",
+      "label": "RAMP2",
+      "type": "Receptor",
+      "description": "Receptor activity-modifying protein 2; accessory subunit converting CTR into AMY2."
+    },
+    {
+      "id": "ramp3",
+      "label": "RAMP3",
+      "type": "Receptor",
+      "description": "Receptor activity-modifying protein 3; accessory subunit converting CTR into AMY3."
+    },
+    {
+      "id": "glp1r",
+      "label": "GLP-1 receptor (GLP-1R)",
+      "type": "Receptor",
+      "description": "Target of GLP-1 receptor agonists (semaglutide, tirzepatide); co-target of the unimolecular dual agonist amycretin."
+    },
+    {
+      "id": "gipr",
+      "label": "GIP receptor (GIPR)",
+      "type": "Receptor",
+      "description": "Target of GIP receptor agonists; co-target of tirzepatide, enicepatide, and the MBX 5765 prodrug."
+    },
+    {
+      "id": "gcgr",
+      "label": "Glucagon receptor (GCGR)",
+      "type": "Receptor",
+      "description": "Target of glucagon receptor agonists; co-target of AZD9550 and the MBX 5765 prodrug."
+    },
+    {
+      "id": "lepr",
+      "label": "Leptin receptor (LEPR)",
+      "type": "Receptor",
+      "description": "Target of leptin / metreleptin signaling."
+    },
+    {
+      "id": "ap",
+      "label": "Area Postrema (AP)",
+      "type": "BrainRegion",
+      "description": "Circumventricular organ lacking BBB features; fenestrated capillaries let plasma drugs reach AP neurons directly. First central node for amylin satiety."
+    },
+    {
+      "id": "nts",
+      "label": "Nucleus Tractus Solitarius (NTS)",
+      "type": "BrainRegion",
+      "description": "Dorsal vagal complex nucleus; receives AP input and integrates vagal gut signals; meal termination."
+    },
+    {
+      "id": "lpbn",
+      "label": "Lateral Parabrachial Nucleus (LPBN)",
+      "type": "BrainRegion",
+      "description": "Receives AP/NTS input via CGRP (Calca) neurons; relays to CeA and BNST; meal termination and alarm/aversion relay."
+    },
+    {
+      "id": "cea",
+      "label": "Central Amygdala (CeA)",
+      "type": "BrainRegion",
+      "description": "Receives LPBN CGRP input; PKC-delta neurons mediate CCK-induced anorexia; site of conditioned aversion."
+    },
+    {
+      "id": "arc",
+      "label": "Arcuate Nucleus (ARC)",
+      "type": "BrainRegion",
+      "description": "Hypothalamic nucleus with POMC/CART (anorexigenic) and AgRP/NPY (orexigenic) neurons; direct amylin-to-POMC mechanism not established."
+    },
+    {
+      "id": "vmh",
+      "label": "Ventromedial Hypothalamus (VMH)",
+      "type": "BrainRegion",
+      "description": "Hypothalamic nucleus; Calcr enriched in rodents; secondary hypothalamic node."
+    },
+    {
+      "id": "pvn",
+      "label": "Paraventricular Nucleus (PVN)",
+      "type": "BrainRegion",
+      "description": "Hypothalamic nucleus integrating ARC and hindbrain signals."
+    },
+    {
+      "id": "vta",
+      "label": "Ventral Tegmental Area (VTA)",
+      "type": "BrainRegion",
+      "description": "Dopamine neurons projecting to nucleus accumbens and mPFC; amylin reduces food reward/motivation (rodent-established, human emerging)."
+    },
+    {
+      "id": "hippocampus",
+      "label": "Hippocampus",
+      "type": "BrainRegion",
+      "description": "AMY3 proposed as Abeta receptor; amylin + Abeta inhibit LTP in rodent slices (Alzheimer's hypothesis only, not a metabolic pathway)."
+    },
+    {
+      "id": "bnst",
+      "label": "Bed Nucleus of the Stria Terminalis (BNST)",
+      "type": "BrainRegion",
+      "description": "Receives LPBN CGRP input; downstream of PBN in aversion circuitry."
+    },
+    {
+      "id": "nac",
+      "label": "Nucleus Accumbens",
+      "type": "BrainRegion",
+      "description": "Receives VTA dopamine input; amylin activation in VTA suppresses accumbal dopamine for fat more than sucrose (rat voltammetry)."
+    },
+    {
+      "id": "mpfc",
+      "label": "Medial Prefrontal Cortex (mPFC)",
+      "type": "BrainRegion",
+      "description": "Receives VTA input; amylin reduces food-evoked mPFC cFos and phasic dopamine."
+    },
+    {
+      "id": "ldtg",
+      "label": "Laterodorsal Tegmental Nucleus (LDTg)",
+      "type": "BrainRegion",
+      "description": "Direct amylin microinjection site shown to modulate intake/reward in rodents."
+    },
+    {
+      "id": "hypothalamus",
+      "label": "Hypothalamus",
+      "type": "BrainRegion",
+      "description": "Brain region integrating homeostatic hunger signals; Calcr enriched in ARC, DMH, PVN, VMH (rodent)."
+    },
+    {
+      "id": "locus_coeruleus",
+      "label": "Locus Coeruleus",
+      "type": "BrainRegion",
+      "description": "Brainstem nucleus with RAMP1 mRNA / CGRP binding reported; expression only, amylin function unestablished."
+    },
+    {
+      "id": "dvc",
+      "label": "Dorsal Vagal Complex (DVC)",
+      "type": "BrainRegion",
+      "description": "AP + NTS + dorsal motor nucleus of the vagus; integrates hindbrain satiety signals."
+    },
+    {
+      "id": "dmh",
+      "label": "Dorsomedial Hypothalamus (DMH)",
+      "type": "BrainRegion",
+      "description": "Hypothalamic nucleus with Calcr enrichment in rodents."
+    },
+    {
+      "id": "sfo",
+      "label": "Subfornical Organ (SFO)",
+      "type": "BrainRegion",
+      "description": "Another circumventricular organ proposed as an amylin action site."
+    },
+    {
+      "id": "pancreas",
+      "label": "Pancreas",
+      "type": "Organ",
+      "description": "Contains beta cells (amylin + insulin secretion) and alpha cells (glucagon)."
+    },
+    {
+      "id": "stomach",
+      "label": "Stomach",
+      "type": "Organ",
+      "description": "Gastric emptying is delayed by amylin signaling via vagal efferents."
+    },
+    {
+      "id": "gi_tract",
+      "label": "Gastrointestinal Tract",
+      "type": "Organ",
+      "description": "Site of oral peptide degradation (acid + proteases) and permeation-enhancer action."
+    },
+    {
+      "id": "kidney",
+      "label": "Kidney",
+      "type": "Organ",
+      "description": "Main clearance organ for amylin and pramlintide; site of amylin deposition in diabetic nephropathy (observational)."
+    },
+    {
+      "id": "liver",
+      "label": "Liver",
+      "type": "Organ",
+      "description": "Hepatic glucose production is reduced downstream of glucagon suppression; hepatic fat reduced with CagriSema (REIMAGINE 1 MRI substudy)."
+    },
+    {
+      "id": "lung",
+      "label": "Lung",
+      "type": "Organ",
+      "description": "Amylin binding sites reported in lung (review-level evidence)."
+    },
+    {
+      "id": "beta_cell",
+      "label": "Pancreatic Beta Cells",
+      "type": "Tissue",
+      "description": "Produce and co-secrete amylin with insulin; human beta-cell AMY subtype composition unverified."
+    },
+    {
+      "id": "alpha_cell",
+      "label": "Pancreatic Alpha Cells",
+      "type": "Tissue",
+      "description": "Secrete glucagon; suppressed by amylin (direct vs central mechanism unresolved; exact AMY subtype unverified)."
+    },
+    {
+      "id": "bone",
+      "label": "Bone",
+      "type": "Tissue",
+      "description": "Calcitonin inhibits osteoclast resorption; amylin bone effects via CALCR refuted by mouse KO (unidentified receptor); human osteoblasts lack CTR expression."
+    },
+    {
+      "id": "osteoclast",
+      "label": "Osteoclasts",
+      "type": "Tissue",
+      "description": "Bone-resorbing cells inhibited by calcitonin via CALCR; amylin inhibition of osteoclastogenesis not mediated by CALCR in vivo."
+    },
+    {
+      "id": "osteoblast",
+      "label": "Osteoblasts",
+      "type": "Tissue",
+      "description": "Human osteoblast samples show high CLR + RAMP1, low RAMP2, no RAMP3 or CTR expression."
+    },
+    {
+      "id": "vasculature",
+      "label": "Vasculature",
+      "type": "Tissue",
+      "description": "CALCRL protein in capillary endothelium and arterial smooth muscle; amylin vasodilation via CGRP receptor in rodents; human effect unestablished."
+    },
+    {
+      "id": "bat",
+      "label": "Brown Adipose Tissue (BAT)",
+      "type": "Tissue",
+      "description": "Thermogenesis proposed downstream of central amylin to sympathetic activation; rodent-only evidence."
+    },
+    {
+      "id": "skeletal_muscle",
+      "label": "Skeletal Muscle",
+      "type": "Tissue",
+      "description": "Amylin binding sites reported; older literature suggests opposition to muscle glycogen synthesis (unverified as AMYR-mediated)."
+    },
+    {
+      "id": "adipose",
+      "label": "Adipose Tissue",
+      "type": "Tissue",
+      "description": "Amylin receptor distribution reported; fat mass reduced by amylin agonists (largely via reduced intake)."
+    },
+    {
+      "id": "choroid_plexus",
+      "label": "Choroid Plexus / Ventricular Wall",
+      "type": "Tissue",
+      "description": "CALCR detected in circumventricular organs including choroid plexus and ependymal cells."
+    },
+    {
+      "id": "pramlintide",
+      "label": "Pramlintide (Symlin)",
+      "type": "Drug",
+      "description": "Only approved amylin agonist (FDA 2005-03-16), diabetes adjunct, NOT a weight-loss indication. SC, 2-3x/day pre-meal; t1/2 ~48 min; F 30-40%."
+    },
+    {
+      "id": "cagrilintide",
+      "label": "Cagrilintide",
+      "type": "Drug",
+      "description": "Novo Nordisk long-acting acylated amylin analog; dual amylin + calcitonin receptor agonist (DACRA); SC weekly; t1/2 ~7-8 days (secondary source)."
+    },
+    {
+      "id": "davalintide",
+      "label": "Davalintide (AC2307)",
+      "type": "Drug",
+      "description": "Amylin Pharmaceuticals; terminated after Phase 2 (not superior to pramlintide)."
+    },
+    {
+      "id": "petrelintide",
+      "label": "Petrelintide (ZP8396)",
+      "type": "Drug",
+      "description": "Zealand Pharma + Roche; long-acting human amylin analog; Phase 3 ZUPREME program started Sep 2026; SC weekly; t1/2 ~240 h; F ~85%."
+    },
+    {
+      "id": "eloralintide",
+      "label": "Eloralintide (LY3841136)",
+      "type": "Drug",
+      "description": "Lilly selective AMY1 receptor agonist; Phase 2 complete; SC weekly; t1/2 ~310-366 h (secondary source)."
+    },
+    {
+      "id": "azd6234",
+      "label": "AZD6234",
+      "type": "Drug",
+      "description": "AstraZeneca weekly selective amylin receptor agonist (SARA); Phase 2 (one landscape table claims Phase III - conflict unresolved)."
+    },
+    {
+      "id": "abbv295",
+      "label": "ABBV-295 (GUB014295)",
+      "type": "Drug",
+      "description": "Gubra to AbbVie; long-acting amylin analog; Phase 1 complete, Phase 2 started Aug 2026 (NCT07752979); t1/2 10.7-12.3 days."
+    },
+    {
+      "id": "kbp_series",
+      "label": "KBP Series (DACRA)",
+      "type": "Drug",
+      "description": "KeyBioscience DACRA series (KBP-042/-089/-056 etc.); all preclinical or terminated; no clinical program."
+    },
+    {
+      "id": "viking_dacra",
+      "label": "Viking DACRA (VK3012/3006/3015; VK3019)",
+      "type": "Drug",
+      "description": "Viking Therapeutics dual amylin + calcitonin receptor agonists; preclinical series; VK3019 entered Phase 1 SAD Jun 2026."
+    },
+    {
+      "id": "bgm1812",
+      "label": "BGM1812",
+      "type": "Drug",
+      "description": "BrightGene preclinical amylin analog; amylin receptor activity 1.8x petrelintide (EC50) in preclinical data."
+    },
+    {
+      "id": "cagrisema",
+      "label": "CagriSema",
+      "type": "Drug",
+      "description": "Novo Nordisk fixed-dose combination: cagrilintide 2.4 mg + semaglutide 2.4 mg; NDA submitted 2025-12-18; decision expected 2026 Q4; SC weekly."
+    },
+    {
+      "id": "eloratzp",
+      "label": "EloraTZP",
+      "type": "Drug",
+      "description": "Lilly combination: eloralintide + tirzepatide; Phase 2b complete; separate injections in Phase 2b; single-injection combo planned."
+    },
+    {
+      "id": "amycretin",
+      "label": "Amycretin / Zenagamtide (NN9487)",
+      "type": "Drug",
+      "description": "Novo Nordisk unimolecular dual GLP-1 + amylin receptor agonist (NOT a two-drug combo); SC weekly and oral daily; Phase 3 AMAZE ongoing. INN now Zenagamtide."
+    },
+    {
+      "id": "pramlintide_metreleptin",
+      "label": "Pramlintide + Metreleptin",
+      "type": "Drug",
+      "description": "Amylin + leptin combination; terminated Aug 2011 (commercial reassessment; antibody findings)."
+    },
+    {
+      "id": "mbx5765",
+      "label": "MBX 5765",
+      "type": "Drug",
+      "description": "MBX Biosciences preclinical single-peptide prodrug combining GLP-1 + GIP + glucagon + DACRA activity; designed for monthly dosing."
+    },
+    {
+      "id": "accg2671",
+      "label": "ACCG-2671",
+      "type": "Drug",
+      "description": "Structure Therapeutics oral, non-peptide, small-molecule dual amylin + calcitonin receptor agonist (DACRA); first oral small-molecule amylin agonist with clinical data; Phase 1 SAD complete Sep 2026; t1/2 ~6 days."
+    },
+    {
+      "id": "asc39",
+      "label": "ASC39",
+      "type": "Drug",
+      "description": "Ascletis oral small-molecule amylin receptor agonist, amylin-selective; preclinical candidate selected Mar 2026; IND filing expected 2026 Q3."
+    },
+    {
+      "id": "asc36",
+      "label": "ASC36",
+      "type": "Drug",
+      "description": "Ascletis oral amylin receptor peptide agonist (POTENT delivery platform); Phase 1 started 2026; NHP oral bioavailability 6-8%."
+    },
+    {
+      "id": "vrb103",
+      "label": "VRB-103",
+      "type": "Drug",
+      "description": "Verdiva Bio weekly oral amylin analog (peptide); preclinical; expected to enter clinic H2 2026."
+    },
+    {
+      "id": "vrb102",
+      "label": "VRB-102",
+      "type": "Drug",
+      "description": "Verdiva / Sciwind long-acting SC amylin agonist; preclinical."
+    },
+    {
+      "id": "semaglutide",
+      "label": "Semaglutide",
+      "type": "Drug",
+      "description": "GLP-1 receptor agonist; component of CagriSema (2.4 mg); t1/2 ~7 days."
+    },
+    {
+      "id": "tirzepatide",
+      "label": "Tirzepatide",
+      "type": "Drug",
+      "description": "Dual GIP/GLP-1 receptor agonist; component of EloraTZP; comparator in REDEFINE 4 / REIMAGINE 4/5."
+    },
+    {
+      "id": "metreleptin",
+      "label": "Metreleptin",
+      "type": "Drug",
+      "description": "Leptin analog; combined with pramlintide in a terminated obesity program."
+    },
+    {
+      "id": "enicepatide",
+      "label": "Enicepatide (CT-388)",
+      "type": "Drug",
+      "description": "Roche dual GLP-1/GIP agonist; planned Phase 2 combination with petrelintide; no combination data disclosed."
+    },
+    {
+      "id": "enicepatide_combo",
+      "label": "Petrelintide + Enicepatide",
+      "type": "Drug",
+      "description": "Roche/Zealand planned Phase 2 combination; no combination data disclosed."
+    },
+    {
+      "id": "azd9550",
+      "label": "AZD9550",
+      "type": "Drug",
+      "description": "AstraZeneca dual GLP-1/glucagon receptor agonist; component of the ASCEND combination with AZD6234."
+    },
+    {
+      "id": "azd9550_combo",
+      "label": "AZD9550 + AZD6234",
+      "type": "Drug",
+      "description": "AstraZeneca Phase 2b ASCEND combination (GLP-1/glucagon + amylin); data expected H2 2026; no results disclosed."
+    },
+    {
+      "id": "nn9638",
+      "label": "NN9638 (Amylin 355)",
+      "type": "Drug",
+      "description": "Novo Nordisk pipeline code listed by DelveInsight; no public mechanism/stage/efficacy details - do not treat as a confirmed clinical candidate."
+    },
+    {
+      "id": "nn9839",
+      "label": "NN9839 (Amylin 1213)",
+      "type": "Drug",
+      "description": "Novo Nordisk pipeline code listed by DelveInsight; no public mechanism/stage/efficacy details."
+    },
+    {
+      "id": "xw015",
+      "label": "XW015",
+      "type": "Drug",
+      "description": "Verdiva/Sciwind preclinical SC amylin candidate; no public data."
+    },
+    {
+      "id": "accg3535",
+      "label": "ACCG-3535",
+      "type": "Drug",
+      "description": "Structure Therapeutics preclinical oral amylin candidate; no public data."
+    },
+    {
+      "id": "bibn4096bs",
+      "label": "BIBN4096BS (olcegepant)",
+      "type": "Drug",
+      "description": "CGRP antagonist (gepant class); may also antagonize AMY1; ~150-fold lower sensitivity at AMY1(a) than at CGRP1 receptor."
+    },
+    {
+      "id": "ac187",
+      "label": "AC187",
+      "type": "Drug",
+      "description": "Amylin receptor antagonist (research tool); increases food intake / meal size in rodents."
+    },
+    {
+      "id": "ac253",
+      "label": "AC253",
+      "type": "Drug",
+      "description": "Amylin receptor antagonist used in Alzheimer's research; blocks amylin + Abeta inhibition of hippocampal LTP in rodent slices."
+    },
+    {
+      "id": "satiety",
+      "label": "Satiety / Reduced Meal Size",
+      "type": "Effect",
+      "description": "Core weight-loss mechanism; established in humans and rodents."
+    },
+    {
+      "id": "delayed_gastric_emptying",
+      "label": "Delayed Gastric Emptying",
+      "type": "Effect",
+      "description": "Established in humans; via vagal efferents; contributes to satiety and nausea."
+    },
+    {
+      "id": "glucagon_suppression",
+      "label": "Postprandial Glucagon Suppression",
+      "type": "Effect",
+      "description": "Established in humans; reduces hepatic glucose output; direct vs central mechanism unresolved."
+    },
+    {
+      "id": "nausea",
+      "label": "Nausea",
+      "type": "Effect",
+      "description": "Most common adverse effect; dose-dependent, early, mitigated by titration; human AP/PBN mechanism unconfirmed."
+    },
+    {
+      "id": "vomiting",
+      "label": "Vomiting",
+      "type": "Effect",
+      "description": "Dose-dependent adverse effect; AP chemoreceptor trigger zone / vomiting circuitry."
+    },
+    {
+      "id": "weight_loss",
+      "label": "Weight Loss",
+      "type": "Effect",
+      "description": "Outcome of reduced intake (and possibly energy expenditure); established for pramlintide (modest) and newer analogs (larger)."
+    },
+    {
+      "id": "hypoglycemia",
+      "label": "Severe Hypoglycemia (with Insulin)",
+      "type": "Effect",
+      "description": "Boxed warning for pramlintide + insulin, especially T1D, mostly within 3 h of injection."
+    },
+    {
+      "id": "energy_expenditure",
+      "label": "Energy Expenditure / BAT Thermogenesis",
+      "type": "Effect",
+      "description": "Rodent-only: central amylin increases energy expenditure and BAT sympathetic activity; human studies not performed."
+    },
+    {
+      "id": "food_reward_reduction",
+      "label": "Reduced Food Reward / Motivation",
+      "type": "Effect",
+      "description": "Rodent-established (VTA); human emerging; fat vs sugar differences in accumbal dopamine suppression."
+    },
+    {
+      "id": "blood_pressure_effect",
+      "label": "Blood Pressure / Vasodilation",
+      "type": "Effect",
+      "description": "Rodent vasodilation via CGRP receptor; no established human systemic BP effect for amylin agonists."
+    },
+    {
+      "id": "bone_resorption_inhibition",
+      "label": "Bone Resorption Inhibition",
+      "type": "Effect",
+      "description": "Established for calcitonin; amylin bone effect via CALCR refuted by mouse KO; human therapeutic bone effect unestablished."
+    },
+    {
+      "id": "postprandial_glucose",
+      "label": "Postprandial Glucose Lowering",
+      "type": "Effect",
+      "description": "Established: blunted postprandial glucose rise via delayed gastric emptying + glucagon suppression."
+    },
+    {
+      "id": "aversion",
+      "label": "Conditioned Taste Aversion",
+      "type": "Effect",
+      "description": "Aversion memory mediated by PBN to CeA; rodent evidence supports separable satiety vs aversion circuits; human mechanism unconfirmed."
+    },
+    {
+      "id": "leptin_responsiveness",
+      "label": "Restored Leptin Responsiveness",
+      "type": "Effect",
+      "description": "Preclinical: amylin restores leptin responsiveness in rodent brain."
+    },
+    {
+      "id": "fatigue",
+      "label": "Fatigue",
+      "type": "Effect",
+      "description": "Reported adverse effect (e.g., eloralintide Phase 2, 0-46% by group)."
+    },
+    {
+      "id": "hepatic_glucose_output",
+      "label": "Reduced Hepatic Glucose Output",
+      "type": "Effect",
+      "description": "Downstream of glucagon suppression: reduced glycogenolysis / gluconeogenesis."
+    },
+    {
+      "id": "sc_absorption",
+      "label": "Subcutaneous Absorption",
+      "type": "Process",
+      "description": "Mainstream route; bypasses GI lumen degradation and portal first-pass."
+    },
+    {
+      "id": "oral_absorption",
+      "label": "Oral Absorption",
+      "type": "Process",
+      "description": "Exceptional for amylin peptides; limited by acid + protease degradation and poor permeability; SNAC improves semaglutide oral F to ~0.4-1%."
+    },
+    {
+      "id": "albumin_binding",
+      "label": "Albumin Binding (Reversible)",
+      "type": "Process",
+      "description": "Fatty-acid acylation promotes reversible albumin binding, a circulating reservoir that slows clearance and extends half-life."
+    },
+    {
+      "id": "proteolysis",
+      "label": "Proteolysis",
+      "type": "Process",
+      "description": "Peptide degradation by proteases; IDE degrades amylin; specific proteases for synthetic agonists undisclosed."
+    },
+    {
+      "id": "renal_clearance",
+      "label": "Renal Clearance",
+      "type": "Process",
+      "description": "Main clearance route for amylin and pramlintide; kidney is the main determinant of plasma amylin levels."
+    },
+    {
+      "id": "bbb_crossing",
+      "label": "Blood-Brain Barrier (BBB) Crossing",
+      "type": "Process",
+      "description": "Penetration of the tight-junction brain endothelium into parenchyma behind the BBB; NO direct human evidence for synthetic agonists (no CSF data)."
+    },
+    {
+      "id": "ap_access",
+      "label": "AP Access via Fenestrated Capillaries",
+      "type": "Process",
+      "description": "Plasma drugs diffuse through leaky AP capillaries to AP neurons WITHOUT crossing the BBB itself."
+    },
+    {
+      "id": "vagal_efferent",
+      "label": "Vagal Efferent Signaling",
+      "type": "Process",
+      "description": "Downstream effector: AP to vagal efferents to gut to slowed gastric emptying."
+    },
+    {
+      "id": "vagal_afferent",
+      "label": "Vagal Afferent Signaling",
+      "type": "Process",
+      "description": "NOT required for amylin's anorectic effect (subdiaphragmatic vagotomy does not block it)."
+    },
+    {
+      "id": "camp_signaling",
+      "label": "Gs to cAMP to PKA Signaling",
+      "type": "Process",
+      "description": "Main amylin receptor signaling cascade; also acute pERK1/2, Akt, c-Fos."
+    },
+    {
+      "id": "aggregation",
+      "label": "Amylin Aggregation / Amyloid Formation",
+      "type": "Process",
+      "description": "Human amylin misfolds into oligomers and fibrils; >70-90% of T2D autopsies show islet amyloid deposits."
+    },
+    {
+      "id": "gastric_degradation",
+      "label": "Gastric Acid + Protease Degradation",
+      "type": "Process",
+      "description": "Oral barrier: acid + pepsin/trypsin/chymotrypsin/peptidases rapidly degrade peptides."
+    },
+    {
+      "id": "snac_enhancement",
+      "label": "SNAC Permeation Enhancement",
+      "type": "Process",
+      "description": "SNAC buffers local pH, interferes with pepsinogen activation, fluidizes gastric lipid membrane; oral semaglutide F ~0.4-1%."
+    },
+    {
+      "id": "internalization",
+      "label": "Receptor Internalization",
+      "type": "Process",
+      "description": "Mostly inferred from CLR-RAMP1: agonist to phosphorylation + dynamin/beta-arrestin-dependent internalization; one HEK293 study showed almost no AMY1R internalization."
+    },
+    {
+      "id": "beta_cell_apoptosis",
+      "label": "Beta-Cell Apoptosis",
+      "type": "Process",
+      "description": "Downstream of misfolded amylin: ER stress/UPR, mitochondrial dysfunction, BAX up / Bcl-xL down, ROS, IL-1beta to apoptosis."
+    },
+    {
+      "id": "dose_titration",
+      "label": "Dose Titration",
+      "type": "Process",
+      "description": "Slow dose escalation reduces GI adverse events; e.g., pramlintide start low, increase only after >=3 days without nausea."
+    },
+    {
+      "id": "ap_nts_lpbn",
+      "label": "AP to NTS to LPBN Central Satiety Pathway",
+      "type": "Pathway",
+      "description": "Established: AP (CVO) to NTS to LPBN to hypothalamus/forebrain; core weight-loss mechanism."
+    },
+    {
+      "id": "vta_reward",
+      "label": "VTA Reward Pathway",
+      "type": "Pathway",
+      "description": "Rodent-established; VTA amylin reduces food reward/motivation via dopamine circuits."
+    },
+    {
+      "id": "gastric_emptying_pathway",
+      "label": "Gastric Emptying Pathway",
+      "type": "Pathway",
+      "description": "AP to vagal efferents to gut; established."
+    },
+    {
+      "id": "glucagon_pathway",
+      "label": "Glucagon Suppression Pathway",
+      "type": "Pathway",
+      "description": "Amylin to alpha cells (direct and/or islet paracrine); established, exact subtype unverified."
+    },
+    {
+      "id": "bat_thermogenesis",
+      "label": "BAT Thermogenesis Pathway",
+      "type": "Pathway",
+      "description": "Central amylin to sympathetic to BAT; rodent-only."
+    },
+    {
+      "id": "amyloid_toxicity",
+      "label": "Amyloid Toxicity Pathway",
+      "type": "Pathway",
+      "description": "Misfolded amylin to ER stress, mitochondrial dysfunction, beta-cell apoptosis (emerging; prion-like seeding hypothesis)."
+    },
+    {
+      "id": "aversion_pathway",
+      "label": "PBN to CeA Aversion Pathway",
+      "type": "Pathway",
+      "description": "LPBN CGRP to CeA PKC-delta; conditioned taste aversion; amylin-specific human nausea mapping unconfirmed."
+    },
+    {
+      "id": "ide",
+      "label": "Insulin-Degrading Enzyme (IDE)",
+      "type": "Enzyme",
+      "description": "Degrades amylin (also insulin, glucagon, ANP, IGF-1/2, Abeta); cleaves peptides up to ~70 aa."
+    },
+    {
+      "id": "neprilysin",
+      "label": "Neprilysin (NEP)",
+      "type": "Enzyme",
+      "description": "Established Abeta-degrading protease; NO direct evidence it degrades amylin - do not assert."
+    }
+  ],
+  "edges": [
+    {
+      "source": "ramp1",
+      "target": "amy1",
+      "relation": "SUBUNIT_OF",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "ramp2",
+      "target": "amy2",
+      "relation": "SUBUNIT_OF",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "ramp3",
+      "target": "amy3",
+      "relation": "SUBUNIT_OF",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "ctr",
+      "target": "amy1",
+      "relation": "SUBUNIT_OF",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "ctr",
+      "target": "amy2",
+      "relation": "SUBUNIT_OF",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "ctr",
+      "target": "amy3",
+      "relation": "SUBUNIT_OF",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "ramp1",
+      "target": "cgrp_receptor",
+      "relation": "SUBUNIT_OF",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "amylin",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "amylin",
+      "target": "amy2",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "amylin",
+      "target": "amy3",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "amylin",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.4 (weak; rAMY pEC50 6.95 at CTR(a))"
+    },
+    {
+      "source": "cgrp",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.2 (high affinity; shared RAMP1)"
+    },
+    {
+      "source": "cgrp",
+      "target": "cgrp_receptor",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "calcitonin",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.2"
+    },
+    {
+      "source": "calcitonin",
+      "target": "amy3",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.4 (hCT pEC50 8.02 at AMY3(a))"
+    },
+    {
+      "source": "salmon_ct",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§2.1 (research-tool agonist)"
+    },
+    {
+      "source": "salmon_ct",
+      "target": "amy2",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§2.1 (research-tool agonist)"
+    },
+    {
+      "source": "salmon_ct",
+      "target": "amy3",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§2.1 (research-tool agonist)"
+    },
+    {
+      "source": "salmon_ct",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§2.1 (research-tool agonist)"
+    },
+    {
+      "source": "amy1",
+      "target": "camp_signaling",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.3"
+    },
+    {
+      "source": "amy2",
+      "target": "camp_signaling",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.3"
+    },
+    {
+      "source": "amy3",
+      "target": "camp_signaling",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.3"
+    },
+    {
+      "source": "ctr",
+      "target": "camp_signaling",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§1.3"
+    },
+    {
+      "source": "camp_signaling",
+      "target": "ap_nts_lpbn",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§1.3 + §2.1"
+    },
+    {
+      "source": "amy1",
+      "target": "internalization",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§1.3 (mostly inferred; one HEK293 study showed almost no AMY1R internalization)"
+    },
+    {
+      "source": "ctr",
+      "target": "kidney",
+      "relation": "EXPRESSED_IN",
+      "evidence": "established",
+      "source_ref": "§1.5 (HPA protein in renal tubules)"
+    },
+    {
+      "source": "ctr",
+      "target": "choroid_plexus",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§1.5 (HPA; circumventricular organs)"
+    },
+    {
+      "source": "ctr",
+      "target": "beta_cell",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§1.5 (mouse co-localization; human unverified)"
+    },
+    {
+      "source": "ctr",
+      "target": "ap",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (rodent mRNA)"
+    },
+    {
+      "source": "ctr",
+      "target": "hypothalamus",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§1.5 (rodent + HPA)"
+    },
+    {
+      "source": "ctr",
+      "target": "arc",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§1.5 (mouse Calcr enrichment)"
+    },
+    {
+      "source": "ctr",
+      "target": "osteoblast",
+      "relation": "NOT_EXPRESSED_IN",
+      "evidence": "established",
+      "source_ref": "§1.5 (16 human osteoblast samples: no CTR)"
+    },
+    {
+      "source": "ramp1",
+      "target": "ap",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§1.5 (rodent mRNA)"
+    },
+    {
+      "source": "ramp2",
+      "target": "ap",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (rodent mRNA)"
+    },
+    {
+      "source": "ramp3",
+      "target": "ap",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (rodent mRNA)"
+    },
+    {
+      "source": "ramp1",
+      "target": "locus_coeruleus",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§1.5 (rodent mRNA)"
+    },
+    {
+      "source": "cgrp_receptor",
+      "target": "vasculature",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§1.5 (CALCRL IHC, human/rat/mouse)"
+    },
+    {
+      "source": "amy2",
+      "target": "ap",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (CTR + RAMP2 mRNA in AP, rodent)"
+    },
+    {
+      "source": "amy3",
+      "target": "ap",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (CTR + RAMP3 mRNA in AP, rodent)"
+    },
+    {
+      "source": "amy3",
+      "target": "hippocampus",
+      "relation": "EXPRESSED_IN",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (AMY3 proposed Abeta receptor)"
+    },
+    {
+      "source": "ap",
+      "target": "dvc",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "nts",
+      "target": "dvc",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "ap",
+      "target": "nts",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.1 (AP -> NTS)"
+    },
+    {
+      "source": "nts",
+      "target": "lpbn",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.1 (NTS -> LPBN)"
+    },
+    {
+      "source": "lpbn",
+      "target": "cea",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.1 (LPBN CGRP -> CeA)"
+    },
+    {
+      "source": "lpbn",
+      "target": "bnst",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.1 (LPBN -> BNST)"
+    },
+    {
+      "source": "lpbn",
+      "target": "hypothalamus",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.1 (LPBN -> hypothalamus/forebrain)"
+    },
+    {
+      "source": "arc",
+      "target": "hypothalamus",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "vmh",
+      "target": "hypothalamus",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "pvn",
+      "target": "hypothalamus",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "dmh",
+      "target": "hypothalamus",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§1.5"
+    },
+    {
+      "source": "vta",
+      "target": "nac",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.1 (VTA dopamine -> NAc)"
+    },
+    {
+      "source": "vta",
+      "target": "mpfc",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.1 (VTA -> mPFC)"
+    },
+    {
+      "source": "ap",
+      "target": "ap_nts_lpbn",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "nts",
+      "target": "ap_nts_lpbn",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "lpbn",
+      "target": "ap_nts_lpbn",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "hypothalamus",
+      "target": "ap_nts_lpbn",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "ap_nts_lpbn",
+      "target": "satiety",
+      "relation": "MEDIATES",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "ap_nts_lpbn",
+      "target": "weight_loss",
+      "relation": "MEDIATES",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "amy1",
+      "target": "ap_nts_lpbn",
+      "relation": "MEDIATES",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "amy2",
+      "target": "ap_nts_lpbn",
+      "relation": "MEDIATES",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "amy3",
+      "target": "ap_nts_lpbn",
+      "relation": "MEDIATES",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "vta",
+      "target": "vta_reward",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (rodent)"
+    },
+    {
+      "source": "nac",
+      "target": "vta_reward",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (rodent)"
+    },
+    {
+      "source": "mpfc",
+      "target": "vta_reward",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (rodent)"
+    },
+    {
+      "source": "vta_reward",
+      "target": "food_reward_reduction",
+      "relation": "MEDIATES",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (rodent-established; human emerging)"
+    },
+    {
+      "source": "vagal_efferent",
+      "target": "gastric_emptying_pathway",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "stomach",
+      "target": "gastric_emptying_pathway",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "gastric_emptying_pathway",
+      "target": "delayed_gastric_emptying",
+      "relation": "MEDIATES",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "alpha_cell",
+      "target": "glucagon_pathway",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "glucagon_pathway",
+      "target": "glucagon_suppression",
+      "relation": "MEDIATES",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "bat",
+      "target": "bat_thermogenesis",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§2.2 (rodent-only)"
+    },
+    {
+      "source": "bat_thermogenesis",
+      "target": "energy_expenditure",
+      "relation": "MEDIATES",
+      "evidence": "emerging",
+      "source_ref": "§2.2 (rodent-only; human unconfirmed)"
+    },
+    {
+      "source": "amyloid_oligomer",
+      "target": "amyloid_toxicity",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "beta_cell",
+      "target": "amyloid_toxicity",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§1.1 (target of toxicity)"
+    },
+    {
+      "source": "amyloid_toxicity",
+      "target": "beta_cell_apoptosis",
+      "relation": "MEDIATES",
+      "evidence": "emerging",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "lpbn",
+      "target": "aversion_pathway",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (rodent)"
+    },
+    {
+      "source": "cea",
+      "target": "aversion_pathway",
+      "relation": "PART_OF",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (rodent)"
+    },
+    {
+      "source": "aversion_pathway",
+      "target": "aversion",
+      "relation": "MEDIATES",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (rodent)"
+    },
+    {
+      "source": "aversion_pathway",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "unverified",
+      "source_ref": "§2.5 (human AP/PBN nausea mapping unconfirmed)"
+    },
+    {
+      "source": "beta_cell",
+      "target": "amylin",
+      "relation": "SECRETS",
+      "evidence": "established",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "beta_cell",
+      "target": "insulin",
+      "relation": "SECRETS",
+      "evidence": "established",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "amylin",
+      "target": "insulin",
+      "relation": "CO_SECRETED_WITH",
+      "evidence": "established",
+      "source_ref": "§1.1 (same secretory granules)"
+    },
+    {
+      "source": "alpha_cell",
+      "target": "glucagon",
+      "relation": "SECRETS",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "amylin",
+      "target": "satiety",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "amylin",
+      "target": "delayed_gastric_emptying",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "amylin",
+      "target": "glucagon_suppression",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "amylin",
+      "target": "aggregation",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§1.1 (human amylin readily aggregates)"
+    },
+    {
+      "source": "aggregation",
+      "target": "beta_cell_apoptosis",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "glucagon",
+      "target": "liver",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§4.2 (drives hepatic glucose output)"
+    },
+    {
+      "source": "glucagon_suppression",
+      "target": "hepatic_glucose_output",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "hepatic_glucose_output",
+      "target": "postprandial_glucose",
+      "relation": "LEADS_TO",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "amylin",
+      "target": "energy_expenditure",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§2.2 (rodent-only)"
+    },
+    {
+      "source": "amylin",
+      "target": "bone_resorption_inhibition",
+      "relation": "CAUSES",
+      "evidence": "unverified",
+      "source_ref": "§2.2 (via CALCR refuted; unidentified receptor)"
+    },
+    {
+      "source": "amylin",
+      "target": "blood_pressure_effect",
+      "relation": "CAUSES",
+      "evidence": "unverified",
+      "source_ref": "§2.2 (no established human systemic effect)"
+    },
+    {
+      "source": "cgrp",
+      "target": "blood_pressure_effect",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§2.2 (rodent vasodilation via CGRP receptor)"
+    },
+    {
+      "source": "calcitonin",
+      "target": "bone_resorption_inhibition",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "amylin",
+      "target": "skeletal_muscle",
+      "relation": "ACTS_ON",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (binding sites reported)"
+    },
+    {
+      "source": "amylin",
+      "target": "lung",
+      "relation": "ACTS_ON",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (binding sites reported)"
+    },
+    {
+      "source": "amylin",
+      "target": "kidney",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§4.2 (binding + clearance)"
+    },
+    {
+      "source": "amylin",
+      "target": "leptin_responsiveness",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (preclinical)"
+    },
+    {
+      "source": "ap",
+      "target": "vagal_efferent",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§4.2 (AP -> vagal efferents)"
+    },
+    {
+      "source": "vagal_efferent",
+      "target": "delayed_gastric_emptying",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "vagal_afferent",
+      "target": "satiety",
+      "relation": "NOT_REQUIRED_FOR",
+      "evidence": "established",
+      "source_ref": "§4.2 (subdiaphragmatic vagotomy does not block anorexia)"
+    },
+    {
+      "source": "ap_access",
+      "target": "ap_nts_lpbn",
+      "relation": "PART_OF",
+      "evidence": "established",
+      "source_ref": "§4.2 (AP access starts the central relay)"
+    },
+    {
+      "source": "snac_enhancement",
+      "target": "oral_absorption",
+      "relation": "ENHANCES",
+      "evidence": "established",
+      "source_ref": "§4.2 (semaglutide model; F ~0.4-1%)"
+    },
+    {
+      "source": "gastric_degradation",
+      "target": "oral_absorption",
+      "relation": "INHIBITS",
+      "evidence": "established",
+      "source_ref": "§4.2"
+    },
+    {
+      "source": "albumin_binding",
+      "target": "renal_clearance",
+      "relation": "REDUCES",
+      "evidence": "established",
+      "source_ref": "§4.2 (lowers free fraction for filtration)"
+    },
+    {
+      "source": "dose_titration",
+      "target": "nausea",
+      "relation": "REDUCES",
+      "evidence": "established",
+      "source_ref": "§4.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "amy2",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "amy3",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (biased to AMY3; EC50 114 pM vs CTR 1492 pM)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (DACRA, non-selective)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "amy2",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (DACRA, non-selective)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "amy3",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (DACRA, non-selective)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (DACRA)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (potent amylin + calcitonin agonist)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "amy2",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (potent amylin + calcitonin agonist)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "amy3",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (potent amylin + calcitonin agonist)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (potent amylin + calcitonin agonist)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (selective AMY1)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (weak; ~12x lower potency, assay-dependent)"
+    },
+    {
+      "source": "azd6234",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (selective amylin RA; limited public detail)"
+    },
+    {
+      "source": "abbv295",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (long-acting amylin analog)"
+    },
+    {
+      "source": "davalintide",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (terminated; limited detail)"
+    },
+    {
+      "source": "davalintide",
+      "target": "amy2",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (terminated; limited detail)"
+    },
+    {
+      "source": "davalintide",
+      "target": "amy3",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (terminated; limited detail)"
+    },
+    {
+      "source": "kbp_series",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (DACRA, preclinical)"
+    },
+    {
+      "source": "kbp_series",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (DACRA, preclinical)"
+    },
+    {
+      "source": "viking_dacra",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (DACRA, preclinical)"
+    },
+    {
+      "source": "viking_dacra",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (DACRA, preclinical)"
+    },
+    {
+      "source": "bgm1812",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (preclinical)"
+    },
+    {
+      "source": "bgm1812",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (preclinical)"
+    },
+    {
+      "source": "accg2671",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.5 (oral small-molecule DACRA; Phase 1 data)"
+    },
+    {
+      "source": "accg2671",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.5 (oral small-molecule DACRA)"
+    },
+    {
+      "source": "asc39",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.5 (preclinical)"
+    },
+    {
+      "source": "asc36",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.4 (Phase 1)"
+    },
+    {
+      "source": "vrb103",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.4 (preclinical)"
+    },
+    {
+      "source": "vrb102",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.4 (preclinical)"
+    },
+    {
+      "source": "amycretin",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.3 (dual GLP-1 + amylin; clinical data)"
+    },
+    {
+      "source": "amycretin",
+      "target": "glp1r",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.3 (dual GLP-1 + amylin)"
+    },
+    {
+      "source": "mbx5765",
+      "target": "amy1",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (preclinical four-pathway prodrug)"
+    },
+    {
+      "source": "mbx5765",
+      "target": "glp1r",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (preclinical)"
+    },
+    {
+      "source": "mbx5765",
+      "target": "gipr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (preclinical)"
+    },
+    {
+      "source": "mbx5765",
+      "target": "gcgr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (preclinical)"
+    },
+    {
+      "source": "mbx5765",
+      "target": "ctr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (DACRA arm, preclinical)"
+    },
+    {
+      "source": "semaglutide",
+      "target": "glp1r",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "tirzepatide",
+      "target": "glp1r",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "tirzepatide",
+      "target": "gipr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "enicepatide",
+      "target": "glp1r",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (dual GLP-1/GIP)"
+    },
+    {
+      "source": "enicepatide",
+      "target": "gipr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (dual GLP-1/GIP)"
+    },
+    {
+      "source": "azd9550",
+      "target": "glp1r",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (dual GLP-1/glucagon)"
+    },
+    {
+      "source": "azd9550",
+      "target": "gcgr",
+      "relation": "ACTIVATES",
+      "evidence": "emerging",
+      "source_ref": "§3.3 (dual GLP-1/glucagon)"
+    },
+    {
+      "source": "metreleptin",
+      "target": "lepr",
+      "relation": "ACTIVATES",
+      "evidence": "established",
+      "source_ref": "§3.2 (leptin analog)"
+    },
+    {
+      "source": "bibn4096bs",
+      "target": "cgrp_receptor",
+      "relation": "INHIBITS",
+      "evidence": "established",
+      "source_ref": "§1.2 (CGRP antagonist)"
+    },
+    {
+      "source": "bibn4096bs",
+      "target": "amy1",
+      "relation": "INHIBITS",
+      "evidence": "emerging",
+      "source_ref": "§1.2 (~150-fold lower sensitivity at AMY1(a))"
+    },
+    {
+      "source": "ac187",
+      "target": "amy1",
+      "relation": "INHIBITS",
+      "evidence": "emerging",
+      "source_ref": "§2.2 (research-tool antagonist)"
+    },
+    {
+      "source": "ac187",
+      "target": "amy2",
+      "relation": "INHIBITS",
+      "evidence": "emerging",
+      "source_ref": "§2.2 (research-tool antagonist)"
+    },
+    {
+      "source": "ac187",
+      "target": "amy3",
+      "relation": "INHIBITS",
+      "evidence": "emerging",
+      "source_ref": "§2.2 (research-tool antagonist)"
+    },
+    {
+      "source": "ac253",
+      "target": "amy3",
+      "relation": "INHIBITS",
+      "evidence": "emerging",
+      "source_ref": "§2.1 (AD research; blocks LTP inhibition)"
+    },
+    {
+      "source": "cagrisema",
+      "target": "cagrilintide",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "cagrisema",
+      "target": "semaglutide",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "eloratzp",
+      "target": "eloralintide",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "eloratzp",
+      "target": "tirzepatide",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "pramlintide_metreleptin",
+      "target": "pramlintide",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide_metreleptin",
+      "target": "metreleptin",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "enicepatide_combo",
+      "target": "petrelintide",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "enicepatide_combo",
+      "target": "enicepatide",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "azd9550_combo",
+      "target": "azd6234",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "azd9550_combo",
+      "target": "azd9550",
+      "relation": "CONTAINS",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "pramlintide",
+      "target": "satiety",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "delayed_gastric_emptying",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "glucagon_suppression",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (modest; meta-analysis -2.57 kg)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (most common AE)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "vomiting",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "hypoglycemia",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (boxed warning with insulin)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "postprandial_glucose",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "fatigue",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§2.5"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (Phase 2: -10.8% at 4.5 mg)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "satiety",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "petrelintide",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (Phase 2: -8.7 to -10.7%)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (20% vs 6% placebo)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (Phase 2: -20.1% at 9 mg)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (11-64% dose-dependent)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "fatigue",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.2 (0-46%)"
+    },
+    {
+      "source": "cagrisema",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.3 (REDEFINE 1: 22.7% / 20.4%)"
+    },
+    {
+      "source": "cagrisema",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.3 (GI AEs predominant)"
+    },
+    {
+      "source": "cagrisema",
+      "target": "postprandial_glucose",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "eloratzp",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.3 (Phase 2b: -23.3% at Elora 9 mg + TZP 15 mg)"
+    },
+    {
+      "source": "amycretin",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.3 (SC -24.3% Phase 1b/2a)"
+    },
+    {
+      "source": "amycretin",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.3 (GI AEs most common)"
+    },
+    {
+      "source": "accg2671",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§3.5 (Phase 1 SAD exploratory; -3.3% unadjusted)"
+    },
+    {
+      "source": "accg2671",
+      "target": "nausea",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.5 (SAD: 10 mg nausea + vomiting 6/6)"
+    },
+    {
+      "source": "accg2671",
+      "target": "vomiting",
+      "relation": "CAUSES",
+      "evidence": "established",
+      "source_ref": "§3.5 (SAD: 10 mg nausea + vomiting 6/6)"
+    },
+    {
+      "source": "abbv295",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (Phase 1 MAD: -7.8% to -9.8%)"
+    },
+    {
+      "source": "azd6234",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "unverified",
+      "source_ref": "§3.2 (no public efficacy results)"
+    },
+    {
+      "source": "davalintide",
+      "target": "weight_loss",
+      "relation": "CAUSES",
+      "evidence": "emerging",
+      "source_ref": "§3.2 (Phase 2; not superior to pramlintide)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "petrelintide",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "eloralintide",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "azd6234",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "abbv295",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.2"
+    },
+    {
+      "source": "cagrisema",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "eloratzp",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "amycretin",
+      "target": "sc_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.3"
+    },
+    {
+      "source": "amycretin",
+      "target": "oral_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.3 (oral daily; SNAC)"
+    },
+    {
+      "source": "accg2671",
+      "target": "oral_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "established",
+      "source_ref": "§3.5 (oral small molecule)"
+    },
+    {
+      "source": "asc36",
+      "target": "oral_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "emerging",
+      "source_ref": "§3.4 (Phase 1)"
+    },
+    {
+      "source": "vrb103",
+      "target": "oral_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "emerging",
+      "source_ref": "§3.4 (preclinical)"
+    },
+    {
+      "source": "asc39",
+      "target": "oral_absorption",
+      "relation": "ADMINISTERED_VIA",
+      "evidence": "emerging",
+      "source_ref": "§3.5 (preclinical)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "albumin_binding",
+      "relation": "USES",
+      "evidence": "established",
+      "source_ref": "§4.2 (fatty-acid acylation)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "albumin_binding",
+      "relation": "USES",
+      "evidence": "established",
+      "source_ref": "§4.2 (C20 fatty diacid)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "albumin_binding",
+      "relation": "USES",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (acylated; exact chain/% undisclosed)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "proteolysis",
+      "relation": "METABOLIZED_BY",
+      "evidence": "established",
+      "source_ref": "§4.2 (renal proteolysis)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "renal_clearance",
+      "relation": "CLEARED_BY",
+      "evidence": "established",
+      "source_ref": "§4.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "ide",
+      "relation": "METABOLIZED_BY",
+      "evidence": "unverified",
+      "source_ref": "§4.2 (IDE degrades amylin; synthetic-agonist proteases undisclosed)"
+    },
+    {
+      "source": "amylin",
+      "target": "ide",
+      "relation": "METABOLIZED_BY",
+      "evidence": "established",
+      "source_ref": "§4.2 (IDE degrades amylin)"
+    },
+    {
+      "source": "amylin",
+      "target": "neprilysin",
+      "relation": "METABOLIZED_BY",
+      "evidence": "unverified",
+      "source_ref": "§4.2 (no direct evidence NEP degrades amylin)"
+    },
+    {
+      "source": "amylin",
+      "target": "renal_clearance",
+      "relation": "CLEARED_BY",
+      "evidence": "established",
+      "source_ref": "§1.1"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "proteolysis",
+      "relation": "METABOLIZED_BY",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (inferred fragments + renal clearance; proportions undisclosed)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "renal_clearance",
+      "relation": "CLEARED_BY",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (inferred)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "proteolysis",
+      "relation": "METABOLIZED_BY",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (inferred)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "proteolysis",
+      "relation": "METABOLIZED_BY",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (inferred)"
+    },
+    {
+      "source": "amylin",
+      "target": "ap",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1"
+    },
+    {
+      "source": "pramlintide",
+      "target": "ap",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "ap",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "eloralintide",
+      "target": "ap",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "petrelintide",
+      "target": "ap",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "amylin",
+      "target": "ap_access",
+      "relation": "REACHES_VIA",
+      "evidence": "established",
+      "source_ref": "§4.2 (fenestrated CVO capillaries)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "ap_access",
+      "relation": "REACHES_VIA",
+      "evidence": "established",
+      "source_ref": "§4.2"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "ap_access",
+      "relation": "REACHES_VIA",
+      "evidence": "established",
+      "source_ref": "§4.2"
+    },
+    {
+      "source": "eloralintide",
+      "target": "ap_access",
+      "relation": "REACHES_VIA",
+      "evidence": "established",
+      "source_ref": "§4.2"
+    },
+    {
+      "source": "petrelintide",
+      "target": "ap_access",
+      "relation": "REACHES_VIA",
+      "evidence": "established",
+      "source_ref": "§4.2"
+    },
+    {
+      "source": "amylin",
+      "target": "bbb_crossing",
+      "relation": "CROSSES",
+      "evidence": "emerging",
+      "source_ref": "§4.2 (rat radiolabeled evidence only)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "bbb_crossing",
+      "relation": "CROSSES",
+      "evidence": "unverified",
+      "source_ref": "§4.2 (no human CSF data)"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "bbb_crossing",
+      "relation": "CROSSES",
+      "evidence": "unverified",
+      "source_ref": "§4.2 (no human CSF data)"
+    },
+    {
+      "source": "eloralintide",
+      "target": "bbb_crossing",
+      "relation": "CROSSES",
+      "evidence": "unverified",
+      "source_ref": "§4.2 (no human CSF data)"
+    },
+    {
+      "source": "petrelintide",
+      "target": "bbb_crossing",
+      "relation": "CROSSES",
+      "evidence": "unverified",
+      "source_ref": "§4.2 (no human CSF data)"
+    },
+    {
+      "source": "pramlintide",
+      "target": "ap_nts_lpbn",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "cagrilintide",
+      "target": "ap_nts_lpbn",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "eloralintide",
+      "target": "ap_nts_lpbn",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "petrelintide",
+      "target": "ap_nts_lpbn",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.1 + §4.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "gastric_emptying_pathway",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    },
+    {
+      "source": "pramlintide",
+      "target": "glucagon_pathway",
+      "relation": "ACTS_ON",
+      "evidence": "established",
+      "source_ref": "§2.2"
+    }
+  ]
+}
