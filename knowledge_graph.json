@@ -190,7 +190,7 @@
       "id": "mpfc",
       "label": "Medial Prefrontal Cortex (mPFC)",
       "type": "BrainRegion",
-      "description": "Receives VTA input; amylin reduces food-evoked mPFC cFos and phasic dopamine."
+      "description": "Receives VTA input; amylin reduces food-evoked mPFC cFos and phasic dopamine (attributed to the eNeuro paper - abstract only; full text needed)."
     },
     {
       "id": "ldtg",
@@ -328,7 +328,7 @@
       "id": "pramlintide",
       "label": "Pramlintide (Symlin)",
       "type": "Drug",
-      "description": "Only approved amylin agonist (FDA 2005-03-16), diabetes adjunct, NOT a weight-loss indication. SC, 2-3x/day pre-meal; t1/2 ~48 min; F 30-40%."
+      "description": "Only approved amylin agonist (FDA 2005-03-16), diabetes adjunct, NOT a weight-loss indication. SC, 2-3x/day pre-meal; t1/2 ~48 min; F 30-40% (PK numbers unverified in the 2026-10-16 pass - Drugs.com monograph inaccessible)."
     },
     {
       "id": "cagrilintide",
@@ -352,37 +352,37 @@
       "id": "eloralintide",
       "label": "Eloralintide (LY3841136)",
       "type": "Drug",
-      "description": "Lilly selective AMY1 receptor agonist; Phase 2 complete; SC weekly; t1/2 ~310-366 h (secondary source)."
+      "description": "Lilly selective AMY1 receptor agonist; Phase 2 complete (NCT06230523: 1 mg -9.5%, 3 mg -12.4%, 6 mg -17.6%, 9 mg -20.1% vs placebo -0.4% - corrected 2026-10-16); SC weekly; t1/2 ~310-366 h (secondary source only; not in Lilly press release or Wikipedia Eloralintide)."
     },
     {
       "id": "azd6234",
       "label": "AZD6234",
       "type": "Drug",
-      "description": "AstraZeneca weekly selective amylin receptor agonist (SARA); Phase 2 (one landscape table claims Phase III - conflict unresolved)."
+      "description": "AstraZeneca weekly selective amylin receptor agonist (SARA); Phase 2 (one landscape table claims Phase III - conflict unresolved); ASCEND n=360 verified via Close Concerns; APRICUS/ARAY need sources."
     },
     {
       "id": "abbv295",
       "label": "ABBV-295 (GUB014295)",
       "type": "Drug",
-      "description": "Gubra to AbbVie; long-acting amylin analog; Phase 1 complete, Phase 2 started Aug 2026 (NCT07752979); t1/2 10.7-12.3 days."
+      "description": "Gubra to AbbVie; long-acting amylin analog; Phase 1 complete, Phase 2 started Aug 2026 (NCT07752979); t1/2 10.7-12.3 days (press release inaccessible in the 2026-10-16 verification pass - all numbers unverified pending re-check)."
     },
     {
       "id": "kbp_series",
       "label": "KBP Series (DACRA)",
       "type": "Drug",
-      "description": "KeyBioscience DACRA series (KBP-042/-089/-056 etc.); all preclinical or terminated; no clinical program."
+      "description": "KeyBioscience DACRA series (KBP-042/-089/-056 etc.); status after 2017 not established by retrieved sources (the 2017 article reports an active collaboration); KBP-336 preclinical OA data verified."
     },
     {
       "id": "viking_dacra",
       "label": "Viking DACRA (VK3012/3006/3015; VK3019)",
       "type": "Drug",
-      "description": "Viking Therapeutics dual amylin + calcitonin receptor agonists; preclinical series; VK3019 entered Phase 1 SAD Jun 2026."
+      "description": "Viking Therapeutics dual amylin + calcitonin receptor agonists; preclinical series; VK3019 entered Phase 1 SAD Jun 2026 (VK3019 Phase 1 verified via AllSci; compound codes / ~1.4x selectivity not in the 2024 press release)."
     },
     {
       "id": "bgm1812",
       "label": "BGM1812",
       "type": "Drug",
-      "description": "BrightGene preclinical amylin analog; amylin receptor activity 1.8x petrelintide (EC50) in preclinical data."
+      "description": "BrightGene preclinical amylin analog; amylin receptor activity 1.8x petrelintide (EC50) in preclinical data (press release inaccessible in the 2026-10-16 verification pass)."
     },
     {
       "id": "cagrisema",
@@ -394,7 +394,7 @@
       "id": "eloratzp",
       "label": "EloraTZP",
       "type": "Drug",
-      "description": "Lilly combination: eloralintide + tirzepatide; Phase 2b complete; separate injections in Phase 2b; single-injection combo planned."
+      "description": "Lilly combination: eloralintide + tirzepatide; Phase 2b complete (-23.3% verified via Reuters); 24.6 kg / NCT / two-injection details need the Pharmacy Times piece (inaccessible); single-injection combo planned."
     },
     {
       "id": "amycretin",
@@ -412,13 +412,13 @@
       "id": "mbx5765",
       "label": "MBX 5765",
       "type": "Drug",
-      "description": "MBX Biosciences preclinical single-peptide prodrug combining GLP-1 + GIP + glucagon + DACRA activity; designed for monthly dosing."
+      "description": "MBX Biosciences preclinical single-peptide prodrug combining GLP-1 + GIP + glucagon + DACRA activity; designed for monthly dosing (press release inaccessible in the 2026-10-16 verification pass; do not call it an 'amycretin prodrug' - amycretin is Novo's molecule)."
     },
     {
       "id": "accg2671",
       "label": "ACCG-2671",
       "type": "Drug",
-      "description": "Structure Therapeutics oral, non-peptide, small-molecule dual amylin + calcitonin receptor agonist (DACRA); first oral small-molecule amylin agonist with clinical data; Phase 1 SAD complete Sep 2026; t1/2 ~6 days."
+      "description": "Structure Therapeutics oral, non-peptide, small-molecule dual amylin + calcitonin receptor agonist (DACRA); first oral small-molecule amylin agonist with clinical data; Phase 1 SAD complete Sep 2026; t1/2 ~6 days (press release inaccessible in the 2026-10-16 verification pass - all numbers unverified pending re-check)."
     },
     {
       "id": "asc39",
@@ -430,13 +430,13 @@
       "id": "asc36",
       "label": "ASC36",
       "type": "Drug",
-      "description": "Ascletis oral amylin receptor peptide agonist (POTENT delivery platform); Phase 1 started 2026; NHP oral bioavailability 6-8%."
+      "description": "Ascletis oral amylin receptor peptide agonist (POTENT delivery platform); Phase 1 started 2026; NHP oral bioavailability 6-8% (needs the PRN ASC36 release; NOT in the PR Asia ASC39 release)."
     },
     {
       "id": "vrb103",
       "label": "VRB-103",
       "type": "Drug",
-      "description": "Verdiva Bio weekly oral amylin analog (peptide); preclinical; expected to enter clinic H2 2026."
+      "description": "Verdiva Bio weekly oral amylin analog (peptide); preclinical; expected to enter clinic H2 2026 (H2 2026 timing NOT in the Pharmaphorum article - needs the Morningstar/ADA source)."
     },
     {
       "id": "vrb102",
@@ -484,7 +484,7 @@
       "id": "azd9550_combo",
       "label": "AZD9550 + AZD6234",
       "type": "Drug",
-      "description": "AstraZeneca Phase 2b ASCEND combination (GLP-1/glucagon + amylin); data expected H2 2026; no results disclosed."
+      "description": "AstraZeneca Phase 2b ASCEND combination (GLP-1/glucagon + amylin); n=360, AZD9550 + AZD6234 1.5/3.5/7.5 mg, data expected H2 2026 (verified via Close Concerns); no results disclosed."
     },
     {
       "id": "nn9638",
@@ -502,13 +502,13 @@
       "id": "xw015",
       "label": "XW015",
       "type": "Drug",
-      "description": "Verdiva/Sciwind preclinical SC amylin candidate; no public data."
+      "description": "Verdiva/Sciwind preclinical SC amylin candidate for obesity/NASH/T2D (only minimal DelveInsight listing details; no mechanism or efficacy data)."
     },
     {
       "id": "accg3535",
       "label": "ACCG-3535",
       "type": "Drug",
-      "description": "Structure Therapeutics preclinical oral amylin candidate; no public data."
+      "description": "Structure Therapeutics preclinical oral amylin candidate; only minimal DelveInsight listing details (Preclinical, Obesity, Oral); no mechanism or efficacy data."
     },
     {
       "id": "bibn4096bs",
@@ -766,7 +766,7 @@
       "id": "ide",
       "label": "Insulin-Degrading Enzyme (IDE)",
       "type": "Enzyme",
-      "description": "Degrades amylin (also insulin, glucagon, ANP, IGF-1/2, Abeta); cleaves peptides up to ~70 aa."
+      "description": "Reported to degrade amylin (also insulin, glucagon, ANP, IGF-1/2, Abeta); cleaves peptides up to ~70 aa (primary sources inaccessible in the 2026-10-16 verification pass - re-check pending)."
     },
     {
       "id": "neprilysin",
@@ -1005,7 +1005,7 @@
       "target": "ap",
       "relation": "EXPRESSED_IN",
       "evidence": "emerging",
-      "source_ref": "§1.5 (rodent mRNA)"
+      "source_ref": "§1.5 (rodent mRNA; MDPI paper cautions IHC cannot confidently assign RAMP1 localization)"
     },
     {
       "source": "ramp2",
@@ -1026,7 +1026,7 @@
       "target": "locus_coeruleus",
       "relation": "EXPRESSED_IN",
       "evidence": "emerging",
-      "source_ref": "§1.5 (rodent mRNA)"
+      "source_ref": "§1.5 (rodent mRNA; MDPI paper cautions IHC cannot confidently assign RAMP1 localization)"
     },
     {
       "source": "cgrp_receptor",
@@ -1144,8 +1144,8 @@
       "source": "vta",
       "target": "mpfc",
       "relation": "LEADS_TO",
-      "evidence": "established",
-      "source_ref": "§2.1 (VTA -> mPFC)"
+      "evidence": "emerging",
+      "source_ref": "§2.1 (VTA -> mPFC circuit details from eNeuro abstract; full text needed)"
     },
     {
       "source": "ap",
@@ -1425,7 +1425,7 @@
       "target": "energy_expenditure",
       "relation": "CAUSES",
       "evidence": "emerging",
-      "source_ref": "§2.2 (rodent-only)"
+      "source_ref": "§2.2 (rodent-only; BAT claims rest on PMC4016184, inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "amylin",
@@ -1446,7 +1446,7 @@
       "target": "blood_pressure_effect",
       "relation": "CAUSES",
       "evidence": "emerging",
-      "source_ref": "§2.2 (rodent vasodilation via CGRP receptor)"
+      "source_ref": "§2.2 (pulmonary-ring vasodilation verified; mesenteric/cardiomyocyte claims need other sources)"
     },
     {
       "source": "calcitonin",
@@ -1557,8 +1557,8 @@
       "source": "pramlintide",
       "target": "amy3",
       "relation": "ACTIVATES",
-      "evidence": "established",
-      "source_ref": "§3.2 (biased to AMY3; EC50 114 pM vs CTR 1492 pM)"
+      "evidence": "unverified",
+      "source_ref": "§3.2 (AMY3 bias claimed; EC50 114/1492 pM misattributed to PMC12410446 - needs re-sourcing)"
     },
     {
       "source": "cagrilintide",
@@ -1628,7 +1628,7 @@
       "target": "ctr",
       "relation": "ACTIVATES",
       "evidence": "established",
-      "source_ref": "§3.2 (weak; ~12x lower potency, assay-dependent)"
+      "source_ref": "§3.2 (weak; ~12x per PubMed abstract vs ~64x implied by Ascletis EC50s - assay-dependent)"
     },
     {
       "source": "azd6234",
@@ -1641,8 +1641,8 @@
       "source": "abbv295",
       "target": "amy1",
       "relation": "ACTIVATES",
-      "evidence": "emerging",
-      "source_ref": "§3.2 (long-acting amylin analog)"
+      "evidence": "unverified",
+      "source_ref": "§3.2 (long-acting amylin analog; press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "davalintide",
@@ -1697,36 +1697,36 @@
       "source": "bgm1812",
       "target": "amy1",
       "relation": "ACTIVATES",
-      "evidence": "emerging",
-      "source_ref": "§3.2 (preclinical)"
+      "evidence": "unverified",
+      "source_ref": "§3.2 (preclinical; press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "bgm1812",
       "target": "ctr",
       "relation": "ACTIVATES",
-      "evidence": "emerging",
-      "source_ref": "§3.2 (preclinical)"
+      "evidence": "unverified",
+      "source_ref": "§3.2 (preclinical; press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "accg2671",
       "target": "amy1",
       "relation": "ACTIVATES",
-      "evidence": "established",
-      "source_ref": "§3.5 (oral small-molecule DACRA; Phase 1 data)"
+      "evidence": "emerging",
+      "source_ref": "§3.5 (oral small-molecule DACRA; press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "accg2671",
       "target": "ctr",
       "relation": "ACTIVATES",
-      "evidence": "established",
-      "source_ref": "§3.5 (oral small-molecule DACRA)"
+      "evidence": "emerging",
+      "source_ref": "§3.5 (oral small-molecule DACRA; press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "asc39",
       "target": "amy1",
       "relation": "ACTIVATES",
       "evidence": "emerging",
-      "source_ref": "§3.5 (preclinical)"
+      "source_ref": "§3.5 (preclinical; EC50s verified in the PR Asia release)"
     },
     {
       "source": "asc36",
@@ -2034,14 +2034,14 @@
       "target": "weight_loss",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.2 (Phase 2: -10.8% at 4.5 mg)"
+      "source_ref": "§3.2 (Phase 2: -10.8% at 4.5 mg; Lancet abstract inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "cagrilintide",
       "target": "nausea",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.2"
+      "source_ref": "§3.2 (GI AEs 41-63% / nausea 20-47% not found in the CJPP portion read - needs full text or Lancet Phase 2 paper)"
     },
     {
       "source": "cagrilintide",
@@ -2055,49 +2055,49 @@
       "target": "weight_loss",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.2 (Phase 2: -8.7 to -10.7%)"
+      "source_ref": "§3.2 (ZUPREME-1: -8.7 to -10.7% verified via Pharmacy Times; ZUPREME-2 topline inaccessible)"
     },
     {
       "source": "petrelintide",
       "target": "nausea",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.2 (20% vs 6% placebo)"
+      "source_ref": "§3.2 (20% vs 6% placebo - verified via Pharmacy Times)"
     },
     {
       "source": "eloralintide",
       "target": "weight_loss",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.2 (Phase 2: -20.1% at 9 mg)"
+      "source_ref": "§3.2 (Phase 2 NCT06230523: 1 mg -9.5%, 3 mg -12.4%, 6 mg -17.6%, 9 mg -20.1% vs placebo -0.4% - corrected 2026-10-16)"
     },
     {
       "source": "eloralintide",
       "target": "nausea",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.2 (11-64% dose-dependent)"
+      "source_ref": "§3.2 (11-64% dose-dependent - verified via PMC12992164 partial read; not in the Lilly press release)"
     },
     {
       "source": "eloralintide",
       "target": "fatigue",
       "relation": "CAUSES",
-      "evidence": "established",
-      "source_ref": "§3.2 (0-46%)"
+      "evidence": "unverified",
+      "source_ref": "§3.2 (0-46% claimed; NOT in the Lilly press release - needs the Lancet paper)"
     },
     {
       "source": "cagrisema",
       "target": "weight_loss",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.3 (REDEFINE 1: 22.7% / 20.4%)"
+      "source_ref": "§3.3 (REDEFINE 4: 23.0% vs tirzepatide 25.5% verified; REDEFINE-1 numbers need original source)"
     },
     {
       "source": "cagrisema",
       "target": "nausea",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.3 (GI AEs predominant)"
+      "source_ref": "§3.3 (GI AEs predominant; DocWire inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "cagrisema",
@@ -2111,14 +2111,14 @@
       "target": "weight_loss",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.3 (Phase 2b: -23.3% at Elora 9 mg + TZP 15 mg)"
+      "source_ref": "§3.3 (Phase 2b: -23.3% verified via Reuters; 24.6 kg / NCT / two-injection details need Pharmacy Times)"
     },
     {
       "source": "amycretin",
       "target": "weight_loss",
       "relation": "CAUSES",
       "evidence": "established",
-      "source_ref": "§3.3 (SC -24.3% Phase 1b/2a)"
+      "source_ref": "§3.3 (SC -24.3% Phase 1b/2a via secondary blog; Phase 2 T2D SC figures conflict - Lancet paper is arbiter)"
     },
     {
       "source": "amycretin",
@@ -2131,29 +2131,29 @@
       "source": "accg2671",
       "target": "weight_loss",
       "relation": "CAUSES",
-      "evidence": "emerging",
-      "source_ref": "§3.5 (Phase 1 SAD exploratory; -3.3% unadjusted)"
+      "evidence": "unverified",
+      "source_ref": "§3.5 (Phase 1 SAD exploratory; press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "accg2671",
       "target": "nausea",
       "relation": "CAUSES",
-      "evidence": "established",
-      "source_ref": "§3.5 (SAD: 10 mg nausea + vomiting 6/6)"
+      "evidence": "unverified",
+      "source_ref": "§3.5 (press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "accg2671",
       "target": "vomiting",
       "relation": "CAUSES",
-      "evidence": "established",
-      "source_ref": "§3.5 (SAD: 10 mg nausea + vomiting 6/6)"
+      "evidence": "unverified",
+      "source_ref": "§3.5 (press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "abbv295",
       "target": "weight_loss",
       "relation": "CAUSES",
-      "evidence": "emerging",
-      "source_ref": "§3.2 (Phase 1 MAD: -7.8% to -9.8%)"
+      "evidence": "unverified",
+      "source_ref": "§3.2 (press release inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "azd6234",
@@ -2271,15 +2271,15 @@
       "source": "cagrilintide",
       "target": "albumin_binding",
       "relation": "USES",
-      "evidence": "established",
-      "source_ref": "§4.2 (fatty-acid acylation)"
+      "evidence": "emerging",
+      "source_ref": "§4.2 (acylation via Upmag secondary source; Springer liraglutide paper supports only the acylation analogy)"
     },
     {
       "source": "eloralintide",
       "target": "albumin_binding",
       "relation": "USES",
       "evidence": "established",
-      "source_ref": "§4.2 (C20 fatty diacid)"
+      "source_ref": "§4.2 (C20 fatty diacid verified in the Lancet Phase 2 paper)"
     },
     {
       "source": "petrelintide",
@@ -2292,15 +2292,15 @@
       "source": "pramlintide",
       "target": "proteolysis",
       "relation": "METABOLIZED_BY",
-      "evidence": "established",
-      "source_ref": "§4.2 (renal proteolysis)"
+      "evidence": "emerging",
+      "source_ref": "§4.2 (renal proteolysis; Drugs.com monograph inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "pramlintide",
       "target": "renal_clearance",
       "relation": "CLEARED_BY",
-      "evidence": "established",
-      "source_ref": "§4.2"
+      "evidence": "emerging",
+      "source_ref": "§4.2 (Drugs.com monograph inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "pramlintide",
@@ -2313,8 +2313,8 @@
       "source": "amylin",
       "target": "ide",
       "relation": "METABOLIZED_BY",
-      "evidence": "established",
-      "source_ref": "§4.2 (IDE degrades amylin)"
+      "evidence": "emerging",
+      "source_ref": "§4.2 (IDE reported to degrade amylin; PMC12154432 inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "amylin",
@@ -2327,8 +2327,8 @@
       "source": "amylin",
       "target": "renal_clearance",
       "relation": "CLEARED_BY",
-      "evidence": "established",
-      "source_ref": "§1.1"
+      "evidence": "emerging",
+      "source_ref": "§1.1 (Drugs.com + Medscape sources inaccessible in the 2026-10-16 verification pass)"
     },
     {
       "source": "cagrilintide",
@@ -2432,8 +2432,8 @@
       "source": "amylin",
       "target": "bbb_crossing",
       "relation": "CROSSES",
-      "evidence": "emerging",
-      "source_ref": "§4.2 (rat radiolabeled evidence only)"
+      "evidence": "unverified",
+      "source_ref": "§4.2 (accumbens-infusion / PPI studies are NOT BBB-transport studies; Banks claims need the primary Banks papers)"
     },
     {
       "source": "pramlintide",
